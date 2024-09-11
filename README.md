@@ -44,9 +44,9 @@ The program will open a window displaying the road line and object detection res
 ### YOLO Configuration
 To use YOLOv3 for object detection, download the following files:
 
-- **yolov3.weights:** Download from here
-- **yolov3.cfg:** Download from here
-- **coco.names.txt:** Download from here
+- **yolov3.weights** 
+- **yolov3.cfg** 
+- **coco.names.txt**
 
 ### Troubleshooting
 Ensure the paths to yolov3.weights, yolov3.cfg, coco.names.txt, and your video file are correct.
