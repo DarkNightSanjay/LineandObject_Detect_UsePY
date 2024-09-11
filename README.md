@@ -22,5 +22,32 @@ Before running this project, ensure you have the following software installed:
 
 To install the required libraries, run:
 
-```bash
-pip install opencv-python opencv-python-headless numpy
+    pip install opencv-python opencv-python-headless numpy
+
+### Files
+- **yolov3.weights:** YOLO model weights.
+- **yolov3.cfg:** YOLO model configuration.
+- **coco.names.txt:** COCO dataset class labels.
+- **car lane.mp4:** Example video to process.
+### How to Run
+- Clone the repository and navigate to the project directory.
+- Ensure you have the YOLO files (`yolov3.weights, yolov3.cfg, coco.names.txt`) in the specified paths.
+- Replace the video_path in the code with the path to your video file (e.g., car lane.mp4).
+### Run the Python script:
+
+    python detect_road_in_video.py
+The program will open a window displaying the road line and object detection results in real time. Press 'q' to exit the video processing.
+### Code Explanation
+- **YOLO Object Detection:** The detect_objects_yolo() function uses OpenCV's dnn module to run the YOLO model and detect objects in the video frames.
+- **Road Line Detection:** The process_frame() function uses Canny Edge Detection and Hough Line Transformation to detect road lines.
+- **Video Processing:** The detect_road_in_video() function processes each frame of the input video, applying both YOLO and road line detection to each frame.
+### YOLO Configuration
+To use YOLOv3 for object detection, download the following files:
+
+- **yolov3.weights:** Download from here
+- **yolov3.cfg:** Download from here
+- **coco.names.txt:** Download from here
+
+### Troubleshooting
+Ensure the paths to yolov3.weights, yolov3.cfg, coco.names.txt, and your video file are correct.
+If road lines are not detected properly, try adjusting the Canny edge detection thresholds or the Hough Line Transform parameters.
