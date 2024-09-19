@@ -25,7 +25,7 @@ To install the required libraries, run:
     pip install opencv-python opencv-python-headless numpy
 
 ### Files
-- yolov3.weights: YOLO model weights.
+- **yolov3.weights:** YOLO model weights.
 - **yolov3.cfg:** YOLO model configuration.
 - **coco.names.txt:** COCO dataset class labels.
 - **car lane.mp4:** Example video to process.
